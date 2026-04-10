@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lolgg\\RiderProjects\\MoneyAgregator\\MoneyAgregator\\MoneyAgregator.csproj": {}
+    "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\MoneyAgregator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lolgg\\RiderProjects\\MoneyAgregator\\MoneyAgregator\\MoneyAgregator.csproj": {
+    "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\MoneyAgregator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lolgg\\RiderProjects\\MoneyAgregator\\MoneyAgregator\\MoneyAgregator.csproj",
+        "projectUniqueName": "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\MoneyAgregator.csproj",
         "projectName": "MoneyAgregator",
-        "projectPath": "C:\\Users\\lolgg\\RiderProjects\\MoneyAgregator\\MoneyAgregator\\MoneyAgregator.csproj",
-        "packagesPath": "C:\\Users\\lolgg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lolgg\\RiderProjects\\MoneyAgregator\\MoneyAgregator\\obj\\",
+        "projectPath": "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\MoneyAgregator.csproj",
+        "packagesPath": "C:\\Users\\Dryet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lolgg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dryet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,12 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
