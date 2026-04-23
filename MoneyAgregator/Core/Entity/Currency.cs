@@ -1,6 +1,6 @@
 ﻿namespace MoneyAgregator.Core.Entity;
 
-public class Currency
+public class CurrencyEntity
 {
     public Guid Id { get; private  set; }
     public string Code { get; private set; }
@@ -8,7 +8,7 @@ public class Currency
     public DateTime RateUpdateDate { get; private set; }
     
     
-    public Currency(string name, decimal rate)
+    public CurrencyEntity(string name, decimal rate)
     {
        Guid Id =  Guid.NewGuid();
        name = Code;

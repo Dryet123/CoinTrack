@@ -1,8 +1,8 @@
 ﻿using MoneyAgregator.Core.Entity;
 namespace MoneyAgregator.Aplication;
 
-public interface ICurrencyRepository : IRepository<Currency>
+public interface ICurrencyRepository : IRepository<CurrencyEntity>
 {
-    Task<Currency> FindByCodeAsync(Guid id);
+    Task<CurrencyEntity> FindByCodeAsync(Guid id);
     
 }

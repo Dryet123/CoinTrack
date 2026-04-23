@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RKMpyUQvbUY=",
+  "dgSpecHash": "b3lgWVtUreY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Dryet\\RiderProjects\\CoinTrack\\MoneyAgregator\\MoneyAgregator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dryet\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
-    "C:\\Users\\Dryet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.5\\microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\Dryet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\11.0.0-preview.3.26207.106\\microsoft.entityframeworkcore.abstractions.11.0.0-preview.3.26207.106.nupkg.sha512",
     "C:\\Users\\Dryet\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.5\\microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512"
   ],
   "logs": []
