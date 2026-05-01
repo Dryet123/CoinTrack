@@ -4,7 +4,7 @@ using MoneyAgregator.Core.Entity;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    DbSet<CurrencyEntity> Currencies { get; set; }
+    public DbSet<CurrencyEntity> Currencies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -8,11 +8,10 @@ public class CurrencyEntity
     public DateTime RateUpdateDate { get; private set; }
     
     
-    public CurrencyEntity(string name, decimal rate)
+    public CurrencyEntity(string code, decimal rate)
     {
-       Guid Id =  Guid.NewGuid();
-       name = Code;
-       rate = Rate;
+       Code = code;
+       Rate = rate;
        RateUpdateDate = DateTime.UtcNow;
        
     }
