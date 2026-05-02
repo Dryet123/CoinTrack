@@ -1,5 +1,4 @@
 ﻿namespace MoneyAgregator.Infrastructure.ExternalApi.NBU;
-using MoneyAgregator.Infrastructure.ExternalApi.NBU;
 
 public class NbuApiClient
 {
