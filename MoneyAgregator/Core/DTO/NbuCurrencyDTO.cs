@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MoneyAgregator.Infrastructure.ExternalApi.NBU;
+namespace MoneyAgregator.Core.DTO;
 
 public class NbuCurrencyDto
 {

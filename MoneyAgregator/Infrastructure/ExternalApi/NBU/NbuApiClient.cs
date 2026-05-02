@@ -1,6 +1,10 @@
-﻿namespace MoneyAgregator.Infrastructure.ExternalApi.NBU;
+﻿using MoneyAgregator.Core.DTO;
 
-public class NbuApiClient
+namespace MoneyAgregator.Infrastructure.ExternalApi.NBU;
+
+using MoneyAgregator.Core.Interfaces;
+
+public class NbuApiClient : INbuApiClient
 {
     readonly HttpClient _httpClient;
     
