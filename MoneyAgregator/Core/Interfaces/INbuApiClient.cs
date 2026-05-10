@@ -1,5 +1,7 @@
-﻿namespace MoneyAgregator.Core.Interfaces;
-using MoneyAgregator.Core.DTO;
+﻿using MoneyAgregator.Infrastructure.DTO;
+
+namespace MoneyAgregator.Core.Interfaces;
+
 public interface INbuApiClient
 {
     
