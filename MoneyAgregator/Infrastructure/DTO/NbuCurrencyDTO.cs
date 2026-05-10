@@ -1,11 +1,11 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace MoneyAgregator.Core.DTO;
+namespace MoneyAgregator.Infrastructure.DTO;
 
 public class NbuCurrencyDto
 {
     [JsonPropertyName("r030")]
-    public int Code { get; set; }
+    public int Code { get; }
     [JsonPropertyName("сс")]
     public string CurrencyCode { get;}
     [JsonPropertyName("rate")]
