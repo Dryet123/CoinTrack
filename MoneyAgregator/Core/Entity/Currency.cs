@@ -10,9 +10,10 @@ public class CurrencyEntity
     public DateTime RateUpdateDate { get; private set; }
     
     
-    public CurrencyEntity(string code, decimal rate)
+    public CurrencyEntity(string currencyCode,string code, decimal rate)
     {
        CurrencyCode = code;
+       Code = code;
        Rate = rate;
        RateUpdateDate = DateTime.UtcNow;
        
