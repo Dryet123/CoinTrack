@@ -4,10 +4,10 @@ public class CurrencyEntity
 {
     public Guid Id { get; set; }
     
-    public string Code { get;  set; }
+    public int  Code { get;  set; }
     public string CurrencyCode { get; set; }
-    public decimal Rate { get; private set; }
-    public DateTime RateUpdateDate { get; private set; }
+    public decimal Rate { get;  set; }
+    public DateTime RateUpdateDate { get; set; }
     
     void UpdateRate(decimal newRate)
     {
