@@ -6,7 +6,7 @@ public interface ICurrencyRepository : IRepository<CurrencyEntity>
 {
     Task<CurrencyEntity> FindByCodeAsync(string code);
     
-    Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencycode);
+    Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencyCode);
     
     Task UpsertCurrenciesAsync(IEnumerable<CurrencyEntity> currencies);
     
