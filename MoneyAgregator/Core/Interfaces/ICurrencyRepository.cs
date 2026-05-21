@@ -4,7 +4,7 @@ namespace MoneyAgregator.Core.Interfaces;
 
 public interface ICurrencyRepository : IRepository<CurrencyEntity>
 {
-    Task<CurrencyEntity> FindByCodeAsync(string code);
+    Task<CurrencyEntity> FindByCodeAsync(int code);
     
     Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencyCode);
     

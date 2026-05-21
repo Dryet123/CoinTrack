@@ -8,7 +8,7 @@ namespace MoneyAgregator.Infrastructure;
 public class CurrencyRepository : ICurrencyRepository
 {
     private readonly AppDbContext _dbContext;
-    private readonly ILogger<CurrencyRepository> _logger; 
+    private readonly ILogger<CurrencyRepository> _logger;
 
     public CurrencyRepository(AppDbContext dbContext,  ILogger<CurrencyRepository> logger)
     {
@@ -43,9 +43,9 @@ public class CurrencyRepository : ICurrencyRepository
         return  Task.CompletedTask;
     }
 
-    public Task<CurrencyEntity> FindByCodeAsync(string code)
+    public Task<CurrencyEntity> FindByCodeAsync(int code)
     {
-        throw new NotImplementedException();
+       throw new NotImplementedException();
     }
 
     public Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencycode)
