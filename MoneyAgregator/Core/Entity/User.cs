@@ -1,29 +1,19 @@
 ﻿namespace MoneyAgregator.Core.Entity;
 
-public class UserEntity
+public class User
 {
-    public Guid Id { get; private set; }
-    public string UserName { get; private set; }
-    public CurrencyEntity[] Balance { get; private set; }  
-    public DateTime BalanceLastUpdated { get; private set; }
-  
+    public Guid Id { get;  set; }
     
+    public string? UserName { get;  set; }
     
+    public string? Email { get;  set; }
     
-    public UserEntity(string userName)
-    {
-        Id = Guid.NewGuid();
-        UserName = userName;
-        BalanceLastUpdated = DateTime.UtcNow;
+    public DateTime BalanceLastUpdated { get;  set; }
+    
+    public string? PasswordHash { get;  set; }
+    
+    public DateTime CreatedAt { get;  set; }
+    
+    public ICollection<DemoAccount> DemoAccounts = new List<DemoAccount>();
 
-
-    }
-
-    
-    void UpdateUsername (string userName)
-    {
-        UserName = userName;
-       
-    }
-    
 }
