@@ -2,13 +2,13 @@
 
 namespace MoneyAgregator.Core.Interfaces;
 
-public interface ICurrencyRepository : IRepository<CurrencyEntity>
+public interface ICurrencyRepository : IRepository<Currency>
 {
-    Task<CurrencyEntity> FindByCodeAsync(int code);
+    Task<Currency> FindByCodeAsync(int code);
     
-    Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencyCode);
+    Task<Currency> FindByCurrencyCodeAsync(string currencyCode);
     
-    Task UpsertCurrenciesAsync(IEnumerable<CurrencyEntity> currencies);
+    Task UpsertCurrenciesAsync(IEnumerable<Currency> currencies);
     
     Task<DateTime> TimeUpdatedAsync();
     

@@ -16,17 +16,17 @@ public class CurrencyRepository : ICurrencyRepository
         _logger = logger;
     }
 
-    public Task<List<CurrencyEntity>> GetAllAsync()
+    public Task<List<Currency>> GetAllAsync()
     {
         throw new NotImplementedException();
     }
 
-    public Task<CurrencyEntity> GetByIdAsync(int id)
+    public Task<Currency> GetByIdAsync(int id)
     {
         throw new NotImplementedException();
     }
 
-    public Task AddAsync(CurrencyEntity entity)
+    public Task AddAsync(Currency entity)
     {
         bool exists = _dbContext.Currencies.Any(c => c.Code == entity.Code && c.CurrencyCode == entity.CurrencyCode);
         if (exists)
@@ -43,17 +43,17 @@ public class CurrencyRepository : ICurrencyRepository
         return  Task.CompletedTask;
     }
 
-    public Task<CurrencyEntity> FindByCodeAsync(int code)
+    public Task<Currency> FindByCodeAsync(int code)
     {
        throw new NotImplementedException();
     }
 
-    public Task<CurrencyEntity> FindByCurrencyCodeAsync(string currencycode)
+    public Task<Currency> FindByCurrencyCodeAsync(string currencycode)
     {
         throw new NotImplementedException();
     }
 
-    public Task UpsertCurrenciesAsync(IEnumerable<CurrencyEntity> currencies)
+    public Task UpsertCurrenciesAsync(IEnumerable<Currency> currencies)
     {
 
         foreach (var entity in currencies)

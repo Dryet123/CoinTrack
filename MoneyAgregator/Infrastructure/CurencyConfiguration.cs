@@ -3,9 +3,9 @@
 namespace MoneyAgregator.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using MoneyAgregator.Core.Entity;
-public class CurencyConfiguration : IEntityTypeConfiguration<CurrencyEntity>
+public class CurencyConfiguration : IEntityTypeConfiguration<Currency>
 {
-    public void Configure(EntityTypeBuilder<CurrencyEntity> builder)
+    public void Configure(EntityTypeBuilder<Currency> builder)
     {
         builder.HasKey(k => k.Id);
 
@@ -13,4 +13,5 @@ public class CurencyConfiguration : IEntityTypeConfiguration<CurrencyEntity>
             .IsRequired();
         
     }
+    
 }

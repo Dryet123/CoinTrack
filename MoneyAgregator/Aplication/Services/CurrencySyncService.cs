@@ -31,7 +31,7 @@ public class CurrencySyncService
             var data = await _nbuApiClient.GetCurrencyAsync();
 
             var entities = data
-                .Select(d => new CurrencyEntity
+                .Select(d => new Currency
                     {
                         Code = d.Code,
                         CurrencyCode =  d.CurrencyCode,

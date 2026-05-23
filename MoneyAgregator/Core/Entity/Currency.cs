@@ -1,6 +1,6 @@
 ﻿namespace MoneyAgregator.Core.Entity;
 
-public class CurrencyEntity
+public class Currency
 {
     public Guid Id { get; set; }
     
