@@ -16,7 +16,7 @@ public enum NotificationStatus
 }
 
 
-public class NotificationEntity
+public class Notification
 {
     Guid Id { get; }
     NotificationType Type { get;}
@@ -24,7 +24,7 @@ public class NotificationEntity
     public DateTime CreatedDate { get; }
     public string Message { get; }
 
-    NotificationEntity(NotificationType type,string message )
+    Notification(NotificationType type,string message )
     {
         Id = Guid.NewGuid();
         Type = type;
