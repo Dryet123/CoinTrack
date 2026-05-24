@@ -1,5 +1,6 @@
 ﻿using MoneyAgregator.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using MoneyAgregator.Aplication.Interfaces;
 using MoneyAgregator.Core.Entity;
 
 namespace MoneyAgregator.Aplication.Services;

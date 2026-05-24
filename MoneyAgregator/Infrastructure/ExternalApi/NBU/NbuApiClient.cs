@@ -1,4 +1,5 @@
-﻿using MoneyAgregator.Infrastructure.DTO;
+﻿using MoneyAgregator.Aplication.Interfaces;
+using MoneyAgregator.Infrastructure.DTO;
 
 namespace MoneyAgregator.Infrastructure.ExternalApi.NBU;
 

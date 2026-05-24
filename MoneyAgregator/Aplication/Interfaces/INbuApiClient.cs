@@ -1,6 +1,6 @@
 ﻿using MoneyAgregator.Infrastructure.DTO;
 
-namespace MoneyAgregator.Core.Interfaces;
+namespace MoneyAgregator.Aplication.Interfaces;
 
 public interface INbuApiClient
 {
