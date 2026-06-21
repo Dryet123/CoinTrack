@@ -1,6 +1,5 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyAgregator", "MoneyAgregator\MoneyAgregator.csproj", "{5FBC4786-9378-4C5F-ACDD-EDC4E9386855}"
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyAgregator", "backend\MoneyAgregator.csproj", "{5FBC4786-9378-4C5F-ACDD-EDC4E9386855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

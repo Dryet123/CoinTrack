@@ -7,29 +7,29 @@ namespace MoneyAgregator.Aplication.Services;
 
 public class CurrencySyncService 
 {
-    private readonly ICurrencyRepository _currencyRepository;
-    private readonly INbuApiClient _nbuApiClient;
-    private readonly ILogger<CurrencySyncService> _logger;
+    private readonly ICurrencyRepository currencyRepository;
+    private readonly INbuApiClient nbuApiClient;
+    private readonly ILogger<CurrencySyncService> logger;
     public CurrencySyncService(INbuApiClient nbuApiClient, ICurrencyRepository currencyRepository, ILogger<CurrencySyncService> logger)
     {
-        this._nbuApiClient = nbuApiClient;
-        this._currencyRepository = currencyRepository;
-        this._logger = logger;
+        this.nbuApiClient = nbuApiClient;
+        this.currencyRepository = currencyRepository;
+        this.logger = logger;
     }
 
     public async Task SyncService()
     {
         var today  = DateTime.UtcNow;
-        var updatedDate = await this._currencyRepository.TimeUpdatedAsync(); 
+        var updatedDate = await this.currencyRepository.TimeUpdatedAsync(); 
         if (today.Date == updatedDate.Date)
         {
-            _logger.LogInformation("rates currently updated, SyncService skipped");
+            logger.LogInformation("rates currently updated, SyncService skipped");
             return;
         }
 
         try
         {
-            var data = await _nbuApiClient.GetCurrencyAsync();
+            var data = await nbuApiClient.GetCurrencyAsync();
 
             var entities = data
                 .Select(d => new Currency
@@ -41,14 +41,14 @@ public class CurrencySyncService
                         
                     }
                 );
-            await _currencyRepository.UpsertCurrenciesAsync(entities);
+            await currencyRepository.UpsertCurrenciesAsync(entities);
 
 
 
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "SyncService failed");
+            logger.LogError(ex, "SyncService failed");
             
         }
         
